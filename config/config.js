@@ -1,11 +1,11 @@
 // The server port - the port to run Pokemon Showdown under
-exports.port = 8000;
+exports.port = 80;
 
 // proxyip - proxy IPs with trusted X-Forwarded-For headers
 //   This can be either false (meaning not to trust any proxies) or an array
 //   of strings. Each string should be either an IP address or a subnet given
 //   in CIDR notation. You should usually leave this as `false` unless you
-//   know what you are doing.
+//   know what you are doing. 
 exports.proxyip = ['127.0.0.0/8'];
 
 // Pokemon of the Day - put a pokemon's name here to make it Pokemon of the Day
@@ -205,7 +205,7 @@ exports.groups = {
 		rangeban: true,
 		potd: true,
 		disableladder: true,
-		globalonly: true,
+		globalonly: true, 
 		tournamentsmanagement: true,
 		rank: 6
 	},
@@ -237,9 +237,10 @@ exports.groups = {
 		name: "Moderator",
 		inherit: '%',
 		jurisdiction: 'u',
-		ban: true,
+		ban: true, 
 		modchat: true,
-		roomvoice: true,
+		roomvoice: true, 
+		roomdestacado: true,
 		forcerename: true,
 		ip: true,
 		alts: '@u',
@@ -250,9 +251,9 @@ exports.groups = {
 		id: "driver",
 		name: "Driver",
 		inherit: '+',
-		jurisdiction: 'u',
+		jurisdiction: 'u', 
 		announce: true,
-		warn: true,
+		warn: true, 
 		kick: true,
 		mute: true,
 		lock: true,
@@ -270,7 +271,8 @@ exports.groups = {
 		name: "Voice",
 		inherit: ' ',
 		broadcast: true,
-		joinbattle: true,
+		joinbattle: true, 
+		tournamentsmanagement: true,
 		rank: 1
 	},
 	' ': {
